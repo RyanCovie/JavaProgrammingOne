@@ -1,14 +1,62 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Chapter6;
-
+import java.util.Scanner;
 /**
  *
  * @author kl0977133
  */
-public class C6_18 {
-    
+public class C6_18 
+{
+    public static void main(String[] args) 
+{
+		Scanner input = new Scanner(System.in); 
+
+		System.out.print("Enter a password: ");
+		String password = input.nextLine();
+
+		System.out.println(
+			(isValidPassword(password) ? "Valid " : "Invalid ") + "Password");
+}
+
+	public static boolean isValidPassword(String password) 
+{
+		final int LENGTH_OF_VALID_PASSWORD = 8;		  
+ final int MINIMUM_NUMBER_OF_DIGITS = 2;	
+
+		boolean validPassword = 
+			isLengthValid(password, LENGTH_OF_VALID_PASSWORD) && 
+			isOnlyLettersAndDigits(password) &&
+			hasNDigits(password, MINIMUM_NUMBER_OF_DIGITS);
+
+		return validPassword;
+	}
+
+		public static boolean isLengthValid(String password, int validLength) 
+{
+		return password.length() >= validLength;
+	}
+
+	public static boolean isOnlyLettersAndDigits(String password) 
+{
+		for (int i = 0; i < password.length(); i++) {
+			if (!Character.isLetterOrDigit(password.charAt(i))) 
+{
+				return false;
+			}
+		}
+		return true;
+	}
+
+		public static boolean hasNDigits(String password, int n) {
+		int numberOfDigits = 0;
+		for (int x = 0; x < password.length(); x++) {
+			if (Character.isDigit(password.charAt(x))) {
+				numberOfDigits++;
+			}
+			if (numberOfDigits >= n) {
+				return true;
+			}
+		}
+		return false;
+	}
+
 }
