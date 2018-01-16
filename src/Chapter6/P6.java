@@ -80,7 +80,7 @@ public class P6
        /**
      * calcCurr Method
      *
-     * @param double to calculate how much the conversion company will take. 
+     * @return num1,num2 to calculate how much the conversion company will take. 
      */
   public static double calcCurr(double num1, double num2)
   {

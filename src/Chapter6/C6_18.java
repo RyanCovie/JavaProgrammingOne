@@ -23,9 +23,9 @@ public class C6_18
 			(isValidPassword(password) ? "Valid " : "Invalid ") + "Password");
 }
    /**
-     * Main Method
+     * isValidPassword Method
      *
-     * @param Boolean To see if password is valid. 
+     * @return password To see if password is valid. 
      */
 	public static boolean isValidPassword(String password) 
 {
@@ -40,18 +40,18 @@ public class C6_18
 		return validPassword;
 	}
    /**
-     * Main Method
+     * isLengthValid Method
      *
-     * @param Boolean to see if the length is valid on the password. 
+     * @return password,validLength to see if the length is valid on the password. 
      */
 		public static boolean isLengthValid(String password, int validLength) 
 {
 		return password.length() >= validLength;
 	}
    /**
-     * Main Method
+     * isOnlyLettersAndDigits Method
      *
-     * @param Boolean to see if there are only letters and digits in password. 
+     * @return password to see if there are only letters and digits in password. 
      */
 	public static boolean isOnlyLettersAndDigits(String password) 
 {
@@ -64,9 +64,9 @@ public class C6_18
 		return true;
 	}
    /**
-     * Main Method
+     * hasNDigits Method
      *
-     * @param Boolean to see if the password has no digits. 
+     * @return password,n to see if the password has no digits. 
      */
 		public static boolean hasNDigits(String password, int n) {
 		int numberOfDigits = 0;
