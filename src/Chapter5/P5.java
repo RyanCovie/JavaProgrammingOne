@@ -1,11 +1,17 @@
 package Chapter5;
 import java.util.Scanner;
 /**
+ * Program to count votes.
  *
- * @author kl0977133
+ * @author Ryan Lykins
  */
 public class P5 
 {
+       /**
+     * Main Method
+     *
+     * @param args to accept the amount of votes and to also spot accepting the votes. 
+     */
     public static void main(String[] args) 
     {
        String voterInput;

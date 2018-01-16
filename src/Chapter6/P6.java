@@ -1,11 +1,17 @@
 package Chapter6;
 import java.util.Scanner;
 /**
+ * Money conversion program.
  *
- * @author kl0977133
+ * @author Ryan Lykins
  */
 public class P6 
 {
+       /**
+     * Main Method
+     *
+     * @param args to accept the conversion rates and amount to be converted. Then display it. 
+     */
     public static void main(String[] args)
     {
     double euroValue;
@@ -71,7 +77,11 @@ public class P6
     
     }
     }
-    
+       /**
+     * calcCurr Method
+     *
+     * @param double to calculate how much the conversion company will take. 
+     */
   public static double calcCurr(double num1, double num2)
   {
   double num3 = num2*num1;

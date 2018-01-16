@@ -2,11 +2,17 @@ package Chapter5;
 import java.util.Scanner;
 import java.util.Random;
 /**
+ * Rock Paper Scissors game.
  *
- * @author kl0977133
+ * @author Ryan Lykins
  */
 public class C5_34 
 {
+       /**
+     * Main Method
+     *
+     * @param args to accept the players input. 
+     */
     public static void main (String[] args)
     {
     Random rand = new Random();
