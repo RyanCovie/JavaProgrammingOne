@@ -77,10 +77,12 @@ public class P6
     
     }
     }
-       /**
+    
+    /**
      * calcCurr Method
-     *
-     * @return num1,num2 to calculate how much the conversion company will take. 
+     * @param num1 is the amount of currency.
+     * @param num2 is the value of the currency. 
+     * @return num1,num2 to calculate how much the conversion company will take.
      */
   public static double calcCurr(double num1, double num2)
   {
