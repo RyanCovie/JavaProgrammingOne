@@ -28,7 +28,7 @@ public class C7_1 {
         displayGrades(scores);
     }
     /**
-     * 
+     * displayGrades Method
      * @param grades 
      */
     public static void displayGrades(int[] grades){
@@ -59,7 +59,7 @@ public class C7_1 {
             return 'F';
     }
 /**
- * 
+ * bestGrade Method
  * @param grades - is student grades.
  * @return - returns highscore. 
  */
