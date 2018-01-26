@@ -1,15 +1,16 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package Chapter7;
 import java.util.Scanner;
 /**
+ * Program to show the minimum of an array. 
  *
- * @author kl0977133
+ * @author Ryan Lykins
  */
 public class C7_9 {
+    /**
+     * Main Method
+     * @param args - accepts numbers.
+     */
     public static void main(String[] args) {
     System.out.print("Enter ten numbers please :");
   Scanner input = new Scanner(System.in);
@@ -21,7 +22,11 @@ public class C7_9 {
  
   System.out.println("The minimum number is: " + min(num));
  }
- 
+ /**
+  * min Method
+  * @param array - The ten numbers from main
+  * @return - the minimum of the array.
+  */
  public static double min(double[] array) {
  
   double min = array[0];

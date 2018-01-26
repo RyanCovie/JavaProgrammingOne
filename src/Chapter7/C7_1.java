@@ -1,15 +1,17 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package Chapter7;
 import java.util.Scanner;
 /**
+ * Program to take and display student scores.
  *
- * @author kl0977133
+ * @author Ryan Lykins
  */
 public class C7_1 {
+      /**
+     * Main Method
+     *
+     * @param args to accept # of students and scores. 
+     */
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
@@ -25,8 +27,11 @@ public class C7_1 {
         
         displayGrades(scores);
     }
-
-    public static void displayGrades(int[] grades) {
+    /**
+     * 
+     * @param grades 
+     */
+    public static void displayGrades(int[] grades){
         int highScore = bestGrade(grades);
         
         for (int i = 0; i < grades.length; i++) {
@@ -34,7 +39,12 @@ public class C7_1 {
                 i, grades[i], assignLetterGrade(grades[i], highScore));
         }
     }
-
+/**
+ * assignLetterGrade method
+ * @param grade - is the students grade.
+ * @param highScore - Is the highest grade.
+ * @return - returns letter for grade. 
+ */
     public static char assignLetterGrade(int grade, int highScore) {
 
         if (highScore - grade <= 10)
@@ -48,7 +58,11 @@ public class C7_1 {
         else 
             return 'F';
     }
-
+/**
+ * 
+ * @param grades - is student grades.
+ * @return - returns highscore. 
+ */
     public static int bestGrade(int[] grades) {
         int highScore = grades[0];
 

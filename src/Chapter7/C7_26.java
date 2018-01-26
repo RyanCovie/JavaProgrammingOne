@@ -1,15 +1,16 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package Chapter7;
 import java.util.Scanner;
 /**
+ * Program that sees if two lists are identical.
  *
- * @author kl0977133
+ * @author Ryan Lykins
  */
 public class C7_26 {
+    /**
+     * Main Method
+     * @param args - Sees if lists are the same. 
+     */
      public static void main(String[] args) {
   Scanner input = new Scanner(System.in);
  
@@ -32,7 +33,12 @@ public class C7_26 {
   }
  
  }
- 
+ /**
+  * equals Method 
+  * @param list1 - first list entered.
+  * @param list2 - Second list entered.
+  * @return - true or false if they are same. 
+  */
  public static boolean equals(int[] list1, int[] list2) {
  
   if (list1.length != list2.length)
